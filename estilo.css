@@ -8,7 +8,7 @@
 
 /* Definições do corpo para centralizar tudo */
 html, body {
-    height: 100vh; /* Ocupa toda a altura da tela */
+/*     height: 100vh; /* Ocupa toda a altura da tela */ */
     display: flex;
 /*     justify-content: center; /* Centraliza horizontalmente */ */
 /*     align-items: center; /* Centraliza verticalmente */ */
