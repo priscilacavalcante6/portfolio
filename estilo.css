@@ -1,75 +1,66 @@
-/* Reset de estilos para evitar conflitos */
+/* Reset básico para evitar inconsistências */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial", sans-serif; 
-    font-weight: 800;
+    font-family: "Arial", sans-serif;
 }
 
-/* Garantindo que o HTML e Body ocupem toda a tela e centralizem o conteúdo */
+/* Definições do corpo para centralizar tudo */
 html, body {
-    height: 100vh;
+    height: 100vh; /* Ocupa toda a altura da tela */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #282828; /* Fundo escuro para contraste */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #282828; /* Cor de fundo escura */
 }
 
-/* Container centralizado */
+/* Container principal */
 .container {
     width: 90%;
-    max-width: 600px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    background: #fff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Cabeçalho */
+/* Estilo do cabeçalho */
 header {
-    text-align: center;
     margin-bottom: 20px;
 }
 
 header img {
-    max-width: 120px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 5px solid #7a0c82;
+    border: 4px solid #7a0c82;
 }
 
 header h1 {
     font-size: 1.8em;
-    margin-top: 10px;
     color: #333;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 /* Botões de links */
-section.botoes-links {
-    width: 100%;
+.botoes-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-/* Estilo dos botões */
+/* Estilização dos botões */
 a.link button {
-    width: 80%;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
     border: none;
     border-radius: 30px;
-    font-size: 1em;
-    font-weight: 700;
+    font-size: 1.1em;
+    font-weight: bold;
     cursor: pointer;
     color: white;
     background: linear-gradient(to right, #7a0c82, #6114ef);
@@ -80,16 +71,9 @@ a.link button:hover {
     transform: scale(1.05);
 }
 
-/* Ícones dentro dos botões */
-a.link i {
-    font-size: 1.5em;
-    margin-left: 10px;
-}
-
 /* Rodapé */
 footer {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 footer a.btn-footer {
@@ -98,6 +82,7 @@ footer a.btn-footer {
     display: inline-block;
     font-size: 1.5em;
     line-height: 50px;
+    text-align: center;
     border-radius: 50%;
     background-color: #7a0c82;
     color: white;
