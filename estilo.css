@@ -1,102 +1,31 @@
-/* Reset para evitar inconsistências */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Arial", sans-serif;
-}
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-/* Estrutura da página */
-html, body {
-    height: 100vh; /* Faz a página ocupar toda a altura */
-    display: flex;
-    flex-direction: column; /* Alinha tudo de cima para baixo */
-    justify-content: center;
-    align-items: center;
-    background-color: #282828;
-}
 
-/* Container principal */
-.container {
-    width: 90%;
-    max-width: 600px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Elementos empilhados */
-    align-items: center;
-}
-
-/* Estilização do cabeçalho */
-header {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #7a0c82;
-}
-
-header h1 {
-    font-size: 2em;
-    color: #333;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Botões de links */
-.botoes-links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* Estilização dos botões */
-a.link button {
-    width: 100%;
-    max-width: 800px;
-    padding: 12px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    color: white;
-    background: linear-gradient(to right, #7a0c82, #6114ef);
-    transition: transform 0.3s;
-}
-
-a.link button:hover {
-    transform: scale(1.05);
-}
-
-/* Rodapé */
-footer {
-    width: 100%;
-    margin-top: 20px;
-}
-
-footer a.btn-footer {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    font-size: 1.5em;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #7a0c82;
-    color: white;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-footer a.btn-footer:hover {
-    transform: scale(1.1);
-}
