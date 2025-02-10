@@ -25,20 +25,20 @@ header h1 {
     margin-bottom: 5px;
 }
 
-/* Descrição */
+/* /* Descrição */
 header p {
     font-size: 1.1em;
     font-weight: 200;
     opacity: 0.9; /* Deixa o texto levemente suave */
-}
+/* } */
 
-
+/*  */
 body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-        }
+/*         } */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -64,3 +64,4 @@ body {
         }
 
 
+ */
