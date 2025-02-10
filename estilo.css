@@ -1,7 +1,7 @@
 /* Estilização do cabeçalho */
 header {
     width: 100%;
-    text-align: center;
+    text-align: column;
     padding: 20px;
     background: linear-gradient(to right, #7a0c82, #6114ef); /* Degradê bonito */
     color: white;
@@ -20,7 +20,7 @@ header img {
 
 /* Nome de usuário */
 header h1 {
-    font-size: 1.8em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -28,7 +28,7 @@ header h1 {
 /* Descrição */
 header p {
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 200;
     opacity: 0.9; /* Deixa o texto levemente suave */
 }
 
@@ -40,7 +40,7 @@ body {
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 1200px;
             margin: 0 auto;
             background: #ffffff;
             padding: 20px;
