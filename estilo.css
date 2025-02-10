@@ -30,11 +30,11 @@ html, body {
 }
 
 
-/* html{
+html{
     height: 100vh;
     font-size: 14px;
     font-weight: 600;
-/* } */
+}
 
 body{
     background-color: #282828;
