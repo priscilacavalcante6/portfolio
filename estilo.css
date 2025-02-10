@@ -17,7 +17,7 @@ html, body {
 
 /* Container principal */
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     background: #fff; /* Fundo branco */
     padding: 30px;
