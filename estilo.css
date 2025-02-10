@@ -1,4 +1,4 @@
-/* Reset básico para evitar inconsistências */
+/* Reset para evitar inconsistências */
 * {
     margin: 0;
     padding: 0;
@@ -6,28 +6,33 @@
     font-family: "Arial", sans-serif;
 }
 
-/* Definições do corpo para centralizar tudo */
+/* Estrutura da página */
 html, body {
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh; /* Faz a página ocupar toda a altura */
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #282828; /* Cor de fundo escura */
+    flex-direction: column; /* Alinha tudo de cima para baixo */
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
 }
 
 /* Container principal */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    background: #fff; /* Fundo branco */
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Elementos empilhados */
+    align-items: center;
 }
 
-/* Estilo do cabeçalho */
+/* Estilização do cabeçalho */
 header {
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -39,16 +44,17 @@ header img {
 }
 
 header h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #333;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Botões de links */
 .botoes-links {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
 
@@ -73,6 +79,7 @@ a.link button:hover {
 
 /* Rodapé */
 footer {
+    width: 100%;
     margin-top: 20px;
 }
 
