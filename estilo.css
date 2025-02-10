@@ -61,7 +61,7 @@ header h1 {
 /* Estilização dos botões */
 a.link button {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     padding: 12px;
     border: none;
     border-radius: 30px;
