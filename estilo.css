@@ -1,130 +1,110 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Arial", cursive; 
-    font-weight: 800;
-}
-
-html, body {
+/* Reset de estilos para evitar conflitos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial", sans-serif; /* Removendo 'cursive' para manter profissional */
+    font-family: "Arial", sans-serif; 
     font-weight: 800;
-    height: 100vh; /* Faz com que a página ocupe toda a altura da tela */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #f4f4f4; /* Define um fundo neutro */
 }
 
+/* Garantindo que o HTML e Body ocupem toda a tela e centralizem o conteúdo */
+html, body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828; /* Fundo escuro para contraste */
+}
+
+/* Container centralizado */
 .container {
-    width: 100%;
-    max-width: 600px; /* Limita o tamanho para melhor leitura */
+    width: 90%;
+    max-width: 600px;
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centraliza todo o conteúdo de texto */
-}
-
-
-html{
-    height: 100vh;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-body{
-    background-color: #282828;
-    height: 50%;
-    position:relative;
-    z-index: -1; 
-}
-.container{
-    height: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    color: #fff;
+    align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: #2a172c;
-}
-
-.degrade{
-    background: linear-gradient(to right, #7a0c82, #6114ef 80%);
-}
-
-header{
+/* Cabeçalho */
+header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-header img{
-    max-width: 150px;
-    /* padding: 30px;
-    /* margin-bottom: 20px; */
+header img {
+    max-width: 120px;
     border-radius: 50%;
-    border: 5px solid  #7a0c82;
+    border: 5px solid #7a0c82;
 }
 
-header h1{
-    font-size: 2em;
-    margin-bottom: 5px;
-    color: #898585;
+header h1 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #333;
     font-weight: 700;
 }
 
-section.botoes-links{
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
-}
-a.link button{
+/* Botões de links */
+section.botoes-links {
+    width: 100%;
     display: flex;
-    width: 80%;
-    padding: 20px 20px;
-    margin-left: 100px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Estilo dos botões */
+a.link button {
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 30px;
     font-size: 1em;
     font-weight: 700;
     cursor: pointer;
-    color: #240123;
-    transition:.5s;
+    color: white;
+    background: linear-gradient(to right, #7a0c82, #6114ef);
+    transition: transform 0.3s;
 }
 
-a.link i{
+a.link button:hover {
+    transform: scale(1.05);
+}
+
+/* Ícones dentro dos botões */
+a.link i {
     font-size: 1.5em;
+    margin-left: 10px;
 }
 
-a.link button:hover,
-a.btn-footer:hover{
-    transform: scale(1.1);
-}
-
-footer{
+/* Rodapé */
+footer {
     text-align: center;
-    margin: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-footer a.btn-footer{
+footer a.btn-footer {
     width: 50px;
     height: 50px;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 50px;
     border-radius: 50%;
+    background-color: #7a0c82;
+    color: white;
     margin: 0 10px;
-    transition: .2s;
+    transition: transform 0.3s;
+}
+
+footer a.btn-footer:hover {
+    transform: scale(1.1);
 }
